@@ -3,3 +3,8 @@
 .hide {
     display: none;
 }
+
+.icon-style {
+    width: 80px;
+    height: 80px;
+}
