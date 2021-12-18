@@ -4,6 +4,7 @@ var apiKey = "673f9746c24ef3e3526fcdc6fe8ef747"
 var todayWeatherEl = document.getElementById("today-weather")
 var date = moment().format("MM/DD/YYYY"); 
 var fiveDayEl = document.getElementById("five-day")
+var fiveDayCards = document.getElementById("fDayCards")
 
 var date1 = moment().add(1, 'days').format('MM/DD/YYYY');
                     document.querySelector("#date1")
@@ -57,6 +58,7 @@ var searchCity = function() {
 
                     fiveDayEl.classList.remove("d-none");
                     todayWeatherEl.classList.remove("d-none");
+                    fiveDayCards.classList.remove("d-none");
                     
 
         // UVI/5 day fetch        
