@@ -46,6 +46,13 @@ var searchCity = function() {
             .then(data => {
                 console.log(data)
 
+                var currentDateH3 = document.querySelector("#current-date")
+                    var date = new Date(data.dt * 1000);
+                    var month = date.getMonth()
+                    var getDay = date.getDay()
+                    var currentDay = month + " " + getDay
+                    currentDateH3.innerHTML = currentDay
+
                 var tempEl = document.querySelector("#temp");
                 tempEl.textContent = "Temp- " + data.main.temp + " F°"
                 var windEl = document.querySelector("#wind");
