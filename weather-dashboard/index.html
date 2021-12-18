@@ -8,12 +8,12 @@
  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="stylesheet" href="./style.css"/>
     <title>Weather Dashboard</title>
 </head>
 
 <body>
-    <header class="container-fluid text-center text-white bg-primary p-2">
+    <header class="container-fluid text-center text-white p-2">
         <h1>Weather Dashboard</h1>
     </header>
 
@@ -31,9 +31,9 @@
                 </div>
                 <form id="history"></form>
             </div>
-            <div class="col-lg-9 hide">
+            <div class="col-lg-9 mb-3">
                 <div class="row mr-0 ">
-                    <div class="col-lg-11 card m-3 " id="today-weather">
+                    <div class="col-lg-11 card m-3 d-none" id="today-weather">
                         <div class="card-body text-center">
                             <h3 id="city-name" class="city-name align-middle"></h3>
                             <img id="icon" class="image-fluid" alt="">
@@ -45,17 +45,47 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-none" id="fiveday-header">
+                <div  class="row d-none" id="five-day">
                     <div class="col-12">
                         <h3>5-Day Forecast</h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-2 forecast bg-primary text-white"></div>
-                    <div class="col-md-2 forecast bg-primary text-white"></div>
-                    <div class="col-md-2 forecast bg-primary text-white"></div>
-                    <div class="col-md-2 forecast bg-primary text-white"></div>
-                    <div class="col-md-2 forecast bg-primary text-white"></div>
+                <div class="row all-cards ">
+                    <div class="card col-md-2 five-day-cards text-white ">
+                        <div id="date1"></div>
+                        <div id="day1temp"></div>
+                        <div id="day1humid"></div>
+                        <div id="day1wind"></div>
+                        <!-- <div id="day1uvi"></div> -->
+                    </div>
+                    <div class="card col-md-2  five-day-cards text-white ">
+                        <div id="date2"></div>
+                        <div id="day2temp"></div>
+                        <div id="day2humid"></div>
+                        <div id="day2wind"></div>
+                        <!-- <div id="day2uvi"></div> -->
+                    </div>
+                    <div class="card col-md-2  five-day-cards text-white ">
+                        <div id="date3"></div>
+                        <div id="day3temp"></div>
+                        <div id="day3humid"></div>
+                        <div id="day3wind"></div>
+                        <!-- <div id="day3uvi"></div> -->
+                    </div>
+                    <div class="card col-md-2  five-day-cards text-white ">
+                        <div id="date4"></div>
+                        <div id="day4temp"></div>
+                        <div id="day4humid"></div>
+                        <div id="day4wind"></div>
+                        <!-- <div id="day4uvi"></div> -->
+                    </div>
+                    <div class="card col-md-2 five-day-cards text-white ">
+                        <div id="date5"></div>
+                        <div id="day5temp"></div>
+                        <div id="day5humid"></div>
+                        <div id="day5wind"></div>
+                        <!-- <div id="day5uvi"></div> -->
+                    </div>
                 </div>
             </div>
         </div>
