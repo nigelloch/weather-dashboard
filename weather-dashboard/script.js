@@ -187,4 +187,3 @@ $(".search-btn").on("click", function() {
 searchBtn.addEventListener("click",searchCity)
 
 // searchBtn.addEventListener("click",searchCity)
-
